@@ -568,12 +568,12 @@ footer {
         padding-right: 0;
     }
 
-    /* .hero__container {
+    .hero__container {
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 3rem;
-    } */
+    }
 
-    /* .hero__content {
+    .hero__content {
         order: 1;
     }
 
@@ -583,7 +583,7 @@ footer {
 
     .hero__image {
         max-width: 500px;
-    } */
+    }
 
     .services__grid {
         grid-template-columns: repeat(3, 1fr);
@@ -624,9 +624,9 @@ footer {
         --h2-font-size: 2.25rem;
     }
 
-    /* .hero__container {
+    .hero__container {
         grid-template-columns: 0.8fr 1fr;
-    } */
+    }
 
     .services__grid {
         grid-template-columns: repeat(3, 1fr);
@@ -669,13 +669,12 @@ footer {
 
     .nav__menu,.nav__actions {
         display: none;
-        /* Simplification for this example, a real site would use a mobile toggle button */
     }
     .toggle-icon img{
         display: block;
     }
 
-    /* .hero-section {
+     .hero-section {
         background: radial-gradient(circle at top, hsl(47, 100%, 85%), transparent 70%), var(--primary-color-light);
     }
 
@@ -716,5 +715,5 @@ footer {
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%);
-    } */
+    } 
 }
