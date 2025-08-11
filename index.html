@@ -137,10 +137,12 @@
         </section>
 
         <!-- ==================== MENU SECTION ==================== -->
-        <section class="section menu">
+          <section class="section menu">
             <h2 class="section__title">Exclusive Menu For You!</h2>
-            <p class="section__subtitle">Experience the epitome of luxury dining with our exclusive menu, a carefully
-                curated selection for our discerning patrons.</p>
+            <p class="section__subtitle">
+                Experience the epitome of luxury dining with our exclusive menu, a carefully
+                curated selection for our discerning patrons.
+            </p>
 
             <div class="menu__categories container">
                 <a href="#" class="category__item">🍟 All foods</a>
@@ -151,39 +153,48 @@
                 <a href="#" class="category__item">🍗 Fried Chicken</a>
             </div>
 
-            <div class="menu__grid container">
-                <!-- Food Item 1 -->
-                <div class="food__card">
-                    <img src="./assets/Images/Image 87.webp" alt="Chicken cheese delight pizza" class="food__card-img">
-                    <h3 class="food__card-title">Chicken cheese delight</h3>
-                    <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
-                        Spices • Olive Oil</p>
-                    <button class="btn btn-card">Order Now</button>
+            <!-- Swiper Container -->
+            <div class="swiper menu__grid container">
+                <div class="swiper-wrapper">
+                    <!-- Food Item 1 -->
+                    <div class="swiper-slide food__card">
+                        <img src="./assets/Images/Image 87.webp" alt="Chicken cheese delight pizza"
+                            class="food__card-img">
+                        <h3 class="food__card-title">Chicken cheese delight</h3>
+                        <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
+                            Spices • Olive Oil</p>
+                        <button class="btn btn-card">Order Now</button>
+                    </div>
+                    <!-- Food Item 2 -->
+                    <div class="swiper-slide food__card">
+                        <img src="./assets/Images/Image 88.webp" alt="Veg Corn pizza" class="food__card-img">
+                        <h3 class="food__card-title">Veg Corn pizza</h3>
+                        <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
+                            Spices • Olive Oil</p>
+                        <button class="btn btn-card">Order Now</button>
+                    </div>
+                    <!-- Food Item 3 -->
+                    <div class="swiper-slide food__card">
+                        <img src="./assets/Images/Image 89.webp" alt="Margerita pizza" class="food__card-img">
+                        <h3 class="food__card-title">Margerita pizza</h3>
+                        <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
+                            Spices • Olive Oil</p>
+                        <button class="btn btn-card">Order Now</button>
+                    </div>
+                    <!-- Food Item 4 -->
+                    <div class="swiper-slide food__card">
+                        <img src="./assets/Images/Image 90.webp" alt="Chicken Tikka pizza" class="food__card-img">
+                        <h3 class="food__card-title">Chicken Tikka pizza</h3>
+                        <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
+                            Spices • Olive Oil</p>
+                        <button class="btn btn-card">Order Now</button>
+                    </div>
+                    <!-- Add more if needed -->
                 </div>
-                <!-- Food Item 2 -->
-                <div class="food__card">
-                    <img src="./assets/Images/Image 88.webp" alt="Veg Corn pizza" class="food__card-img">
-                    <h3 class="food__card-title">Veg Corn pizza</h3>
-                    <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
-                        Spices • Olive Oil</p>
-                    <button class="btn btn-card">Order Now</button>
-                </div>
-                <!-- Food Item 3 -->
-                <div class="food__card">
-                    <img src="./assets/Images/Image 89.webp" alt="Margerita pizza" class="food__card-img">
-                    <h3 class="food__card-title">Margerita pizza</h3>
-                    <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
-                        Spices • Olive Oil</p>
-                    <button class="btn btn-card">Order Now</button>
-                </div>
-                <!-- Food Item 4 -->
-                <div class="food__card">
-                    <img src="./assets/Images/Image 90.webp" alt="Chicken Tikka pizza" class="food__card-img">
-                    <h3 class="food__card-title">Chicken Tikka pizza</h3>
-                    <p class="food__card-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and
-                        Spices • Olive Oil</p>
-                    <button class="btn btn-card">Order Now</button>
-                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
@@ -270,3 +281,27 @@
 </body>
 
 </html>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.menu__grid', {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: { slidesPerView: 2 },    // Mobile
+      768: { slidesPerView: 4 }   // Desktop
+    }
+  });
+</script>
