@@ -1,12 +1,9 @@
-/*=============== GOOGLE FONTS ===============*/
-/* Imported in HTML head */
 
-/*=============== CSS VARIABLES ===============*/
 :root {
     /* Colors */
     --primary-color: hsl(47, 85%, 62%);
     /* --primary-color-light: hsl(47, 90%, 96%); */
-    --primary-color-light:#F1C93B0D ;
+    --primary-color-light: #F1C93B0D;
     --dark-color: hsl(0, 0%, 20%);
     --text-color: hsl(0, 0%, 45%);
     --body-color: hsl(0, 0%, 100%);
@@ -127,7 +124,7 @@ img {
 .nav {
     height: var(--header-height);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -184,7 +181,7 @@ img {
     cursor: pointer;
 }
 
-.toggler{
+.toggler {
     width: 24px;
     height: 24px;
     display: none;
@@ -203,6 +200,7 @@ img {
     display: grid;
     gap: 2rem;
     align-items: center;
+    /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .hero__location {
@@ -316,7 +314,7 @@ img {
 .hero__image {
     max-width: 450px;
     margin-left: 100px;
-    background-image:url(../Images/right\ image\ bg.png);
+    background-image: url(../Images/right_image_bg.png);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -468,11 +466,12 @@ img {
     position: relative;
 }
 
-.app-circle1{
+.app-circle1 {
     position: absolute;
     z-index: 1;
 }
-.app-circle1{
+
+.app-circle1 {
     position: absolute;
     z-index: 2;
     left: 120px;
@@ -646,7 +645,8 @@ footer {
     }
 
     .hero__container {
-        grid-template-columns: 0.8fr 1fr;
+        /* grid-template-columns: 0.8fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .services__grid {
@@ -656,6 +656,7 @@ footer {
     .app__container {
         grid-template-columns: 1fr 1fr;
     }
+    
 
     .app__image-wrapper {
         justify-self: center;
@@ -688,14 +689,18 @@ footer {
         width: 65px;
     }
 
-    .nav__menu,.nav__actions {
+    .nav__menu,
+    .nav__actions {
         display: none;
     }
-    .toggler{
+    .app-section{
+        display: none;
+    }
+    .toggler {
         display: block;
     }
 
-     .hero-section {
+    .hero-section {
         background: radial-gradient(circle at top, hsl(47, 100%, 85%), transparent 70%), var(--primary-color-light);
     }
 
@@ -736,5 +741,5 @@ footer {
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%);
-    } 
+    }
 }
