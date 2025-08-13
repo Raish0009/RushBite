@@ -309,14 +309,14 @@ img {
 
 .hero__image-wrapper {
     position: relative;
+    background-image: url(../Images/right_image_bg.webp);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .hero__image {
     max-width: 450px;
     margin-left: 100px;
-    background-image: url(../Images/right_image_bg.png);
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
 .trust__badge {
